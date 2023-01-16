@@ -1,6 +1,6 @@
-import { http } from 'src/http/http'
-import { ProductDTO } from 'src/http/dto/ProductDTO'
-import { Product } from '../../domain/models/Product'
+import { http } from '@/http/http'
+import { ProductDTO } from '@/http/dto/ProductDTO'
+import { Product } from '@domain/models/product.model'
 
 export const productRepository = {
   getProducts: async () => {

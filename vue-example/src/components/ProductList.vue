@@ -25,8 +25,8 @@ export default defineComponent({
       products: []
     }
   },
-  mounted () {
-    productService.getProducts().then(response => (this.products = response))
+  async mounted () {
+    this.products = await productService.getProducts()
   }
 })
 </script>
